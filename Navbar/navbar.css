@@ -10,13 +10,18 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: black;
-    padding: 1em;
+    padding: 0.75rem 20px;
+    font-weight: 500;
+}
+
+nav span {
+    color: #093607;
 }
 
 nav a {
     text-decoration: none;
     text-transform: capitalize;
-    color: rgb(90, 239, 90);
+    color: #c9deb2;
 }
 
 #logo{
@@ -66,9 +71,9 @@ ul a:hover {
         justify-content: center;
         background-color: black;
         gap: 2em;
-        top: 60px;
+        top: 52px;
         width: 100%;
-        height: calc(110vh - 50px);
+        height: calc(110vh - 52px);
         transition: 0.5s;
     }
     input[type="checkbox"]:checked ~ ul {
@@ -77,6 +82,6 @@ ul a:hover {
     }
     ul a:hover {
         background-color: none;
-        text-decoration: 3px underline rgb(41, 219, 41);
+        text-decoration: 3px underline #093607;
     }
 }
