@@ -12,6 +12,10 @@ html {
   width: 100%;
 }
 
+h2{
+    text-align: center;
+}
+    
 .center {
   width: 80%;
   display: block;
