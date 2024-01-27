@@ -12,10 +12,14 @@ nav {
     background-color: black;
     padding: 0.75rem 20px;
     font-weight: 500;
+
+    min-height: 7vh;
+    max-height: 7vh;
+    height: 7vh;
 }
 
 nav span {
-    color: #093607;
+    color: #1f751b;
 }
 
 nav a {
