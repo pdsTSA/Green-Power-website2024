@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow: clip;
+}
+
+#page-container {
+    max-width: 100vw;
+    overflow-x: clip;
+}
+
+#page-container h1,h2,h3,h4,h5,h6,p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main-logo {
+    color: #c9deb2;
+    font-size: 5em;
+}
+
+#main-logo span {
+    color: #1f751b;
+}
+
+#main-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 93vh;
+    max-height: 93vh;
+    height: 93vh;
+    background: black;
+}
+
+#main-bar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: relative;
+    left: -50vw;
+}
+
+#main-bar-filler {
+    flex: 2;
+}
+
+#main-bar-background {
+    width: 100%;
+    height: 93vh;
+    position: absolute;
+    background-image: url("assets/solar_panels.jpg");
+    opacity: 0;
+}
