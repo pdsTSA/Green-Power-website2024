@@ -1,77 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="costs.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="costs.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Green-Power Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="navbarContainer"></div>
-        <script>
-        $(document).ready(function() {
-            $('#navbarContainer').load('../Navbar/navbar.html');
+      <div id="navbarContainer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#navbarContainer").load("../Navbar/navbar.html");
         });
-        </script>
-        <h1>Costs</h1>
+      </script>
+      <h1>Costs</h1>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h2>Costs of Different Types of Green Energy</h2>
-            </article>
+    <main id="main">
+      <section class="section">
+        <article class="article clear" id="overview">
+          <img
+            class="right"
+            src="placeholder.jpg"
+            alt=""
+            width="306"
+            height="306"
+          />
+          <div class="text-overview">
+            <h2>Costs of Green Energy</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+              ex possimus odit itaque voluptate? Ab beatae velit laboriosam
+              laudantium veritatis accusamus natus voluptatem vel. Consequatur
+              dolorem possimus sint consectetur hic.
+            </p>
+          </div>
+        </article>
 
-            <article>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
+        <br />
+        <!-- The cards are for different types of Green Energy Ex: Solar, Wind, etc... -->
+        <article class="article" id="card-container">
+          <div class="card">
+            <img src="placeholder.jpg" alt="" />
+            <div id="text-container">
+              <h3>[Title]</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempora, est ipsa suscipit itaque minus dolore molestiae
+                molestias magnam magni voluptatum commodi necessitatibus porro,
+                consequatur ipsam ex maxime repellat velit adipisci.
+              </p>
+            </div>
+          </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
+          <div class="card">
+            <img src="placeholder.jpg" alt="" />
+            <div id="text-container">
+              <h3>[Title]</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dignissimos magnam architecto reprehenderit eaque error alias
+                vero aliquam inventore ipsum, velit aspernatur eveniet animi.
+                Optio ad laborum amet neque, fugiat tempore?
+              </p>
+            </div>
+          </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
-            </article>
-
-        </section>
-
-        <section>
-            <article>
-                <h2>Government Regulations</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere voluptatibus aspernatur reiciendis et! Autem facilis odio harum quibusdam! Veniam, consequuntur id? Maxime quo, culpa eligendi dolorum incidunt inventore pariatur?</p>
-                <img src="" alt="">
-            </article>
-
-            <article>
-                <h2>Tax Rebate Information</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium provident inventore in iure incidunt voluptates, facilis, placeat nam totam ducimus explicabo corporis tempore! Et nemo id explicabo sunt facere nostrum?</p>
-                <img src="" alt="">
-            </article>
-
-            <article>
-                <h2>What should you pick?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At excepturi dicta natus. Delectus blanditiis autem sint recusandae a illum laboriosam velit neque, exercitationem, quas nostrum nam vitae asperiores! Ipsum, optio.</p>
-                <img src="" alt="">
-            </article>
-        </section>
+          <div class="card">
+            <img src="placeholder.jpg" alt="" />
+            <div id="text-container">
+              <h3>[Title]</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dignissimos magnam architecto reprehenderit eaque error alias
+                vero aliquam inventore ipsum, velit aspernatur eveniet animi.
+                Optio ad laborum amet neque, fugiat tempore?
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <br />
+      <section class="section" id="information-container">
+        <article class="article information-article">
+          <img
+            class="right"
+            src="placeholder.jpg"
+            alt=""
+            width="306"
+            height="306"
+          />
+          <div class="information-text-right">
+            <h2>Government Regulations</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, quia laudantium? Quisquam, illo nemo quam voluptatum
+              deleniti placeat veniam aliquid consectetur voluptatibus explicabo
+              eos dolores voluptas molestiae assumenda tempora quas.
+            </p>
+          </div>
+        </article>
+        <br />
+        <article class="article information-article">
+          <img
+            class="left"
+            src="placeholder.jpg"
+            alt=""
+            width="306"
+            height="306"
+          />
+          <div class="information-text-left">
+            <h2>Tax Rebate Information</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident veritatis ab sit architecto ullam minus et mollitia
+              iste, laborum voluptate iure nisi quia. Explicabo pariatur, nisi
+              quod quisquam nam alias.
+            </p>
+          </div>
+        </article>
+        <br />
+        <article class="article information-article">
+          <img
+            class="right"
+            src="placeholder.jpg"
+            alt=""
+            width="306"
+            height="306"
+          />
+          <div class="information-text-right">
+            <h2>What Should You Pick?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident veritatis ab sit architecto ullam minus et mollitia
+              iste, laborum voluptate iure nisi quia. Explicabo pariatur, nisi
+              quod quisquam nam alias.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
-        <!--To Be Implemented-->
+      <!--To Be Implemented-->
     </footer>
     <script src="costs.js"></script>
-</body>
+  </body>
 </html>

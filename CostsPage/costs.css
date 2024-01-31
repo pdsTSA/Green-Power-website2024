@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* CSS Variables */
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --font-color: rgb(0, 0, 0);
+  --font-family: "Roboto", sans-serif;
+  --bold-font-weight: 550;
+  --h1-size: clamp(3rem, 2vw + 1rem, 5rem);
+  --h2-size: 2rem;
+  --h3-size: 1.5rem;
+}
+
+/* Reusable Classes */
+.clear {
+  display: flow-root;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* General Styles */
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--bold-font-weight);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--bold-font-weight);
+}
+
+#overview {
+  padding: 0 3em 0 3em;
+  position: relative;
+}
+
+#overview h2 {
+  text-align: center;
+}
+
+.text-overview {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 70%;
+}
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+  border-radius: 1rem;
+}
+
+#text-container {
+  padding: 1em;
+}
+
+#text-container h3 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: green;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.information-article {
+  display: flow-root;
+  position: relative;
+  padding: 0 3em 0 3em;
+  border: 5px solid rgb(0, 0, 0);
+}
+.information-article h2 {
+  text-align: center;
+  padding-bottom: 0.2em;
+}
+.information-text-right {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 70%;
+}
+
+.information-text-left {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 70%;
+  left: 27%;
+}
