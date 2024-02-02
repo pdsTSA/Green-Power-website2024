@@ -44,16 +44,28 @@ const logoAnimation = async (controller) => {
 
 const initAnimations = (controller) => {
     // content panel 1
+    const delay = 10;
+
     let wipeAnimation = new TimelineMax()
-        .to("#content-1-fact-1", 0.5, {x: toPX('100vw')})
+        .to("#content-1-fact-1", 2, {x: toPX('100vw'), delay: delay})
+        .to("#c1-1", 3, {opacity: 1, delay: delay})
+        .to("#c1-2", 3, {opacity: 1, delay: delay})
+        .to("#c1-3", 3, {opacity: 1, delay: delay})
         // animate to second panel
-        .to("#content-panel-1-container", 1,   {x: "-33.333%", delay: 2})
+        .to("#content-panel-1-container", 2,   {x: "-25%", delay: delay * 2})
         .to("#content-1-fact-2", 0, {display: "flex"})
-        .to("#content-1-fact-2", 0.5, {x: toPX('100vw')})
+        .to("#content-1-fact-2", 2, {x: toPX('100vw'), delay: delay})
+        .to("#c2-1", 3, {opacity: 1, delay: delay})
+        .to("#c2-2", 3, {opacity: 1, delay: delay})
         // animate to third panel
-        .to("#content-panel-1-container", 1,   {x: "-66.666%", delay: 2})
+        .to("#content-panel-1-container", 2,   {x: "-50%", delay: delay * 2})
         .to("#content-1-fact-3", 0, {display: "flex"})
-        .to("#content-1-fact-3", 0.5, {x: toPX('100vw')})
+        .to("#content-1-fact-3", 2, {x: toPX('100vw'), delay: delay})
+        .to("#c3-1", 3, {opacity: 1, delay: delay})
+        .to("#c3-2", 3, {opacity: 1, delay: delay})
+        // animate to fourth panel
+        .to("#content-panel-1-container", 2,   {x: "-75%", delay: delay * 2})
+        .to("#content-1-fact-4", 2, {opacity: 1, delay: delay * 2})
 
     new ScrollMagic.Scene({
         triggerElement: "#content-panel-1",
@@ -62,7 +74,7 @@ const initAnimations = (controller) => {
     })
         .setPin("#content-panel-1")
         .setTween(wipeAnimation)
-        .addIndicators() // add indicators (requires plugin)
+        //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 }
 

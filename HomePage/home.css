@@ -33,7 +33,7 @@ body h1,h2,h3,h4,h5,h6,p {
     min-height: 93vh;
     max-height: 93vh;
     height: 93vh;
-    background: black;
+    background: #0e0e13;
 }
 
 .banner {
@@ -72,14 +72,19 @@ body h1,h2,h3,h4,h5,h6,p {
 }
 
 #content-panel-1-container {
-    width: 300%;
+    width: 400%;
     height: 100%;
 }
 
 .slide {
-    width: 33.333%;
+    width: 25%;
     height: 100vh;
     float: left;
+}
+
+.fact-text {
+    opacity: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 700px){
