@@ -65,7 +65,7 @@ const initAnimations = (controller) => {
         .to("#c3-2", 3, {opacity: 1, delay: delay})
         // animate to fourth panel
         .to("#content-panel-1-container", 2,   {x: "-75%", delay: delay * 2})
-        .to("#content-1-fact-4", 2, {opacity: 1, delay: delay * 2})
+        .to("#content-1-fact-4", 10, {opacity: 1, delay: delay * 2})
 
     new ScrollMagic.Scene({
         triggerElement: "#content-panel-1",
