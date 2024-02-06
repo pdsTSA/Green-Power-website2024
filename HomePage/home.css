@@ -64,11 +64,35 @@ body h1,h2,h3,h4,h5,h6,p {
     opacity: 0;
 }
 
-#content-panel-1 {
+.content-panel {
     background: #0e0e13;
     min-height: 100vh;
     max-height: 100vh;
     overflow: clip;
+}
+
+#content-panel-2-container {
+    display: flex;
+    height: 100vh;
+}
+
+.final-panels {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#news-panel {
+    background-image: url("assets/jungle.jpg");
+}
+
+#solutions-panel {
+    background-image: url("assets/oil_slick.jpg");
+}
+
+#costs-panel {
+    background-image: url("assets/solar_panels.jpg");
 }
 
 #content-panel-1-container {
