@@ -6,7 +6,14 @@ $(async () => {
         }
     });
 
-    initAnimations(controller);
+    let slideController = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: 'onLeave',
+        },
+        vertical: false
+    });
+
+    initAnimations(controller, slideController);
     await logoAnimation(controller);
 })
 
@@ -42,39 +49,60 @@ const logoAnimation = async (controller) => {
         .addTo(controller)
 }
 
-const initAnimations = (controller) => {
+const initAnimations = (controller, slideController) => {
     // content panel 1
-    const delay = 10;
+    const delay = 1;
 
     let wipeAnimation = new TimelineMax()
-        .to("#content-1-fact-1", 2, {x: toPX('100vw'), delay: delay})
-        .to("#c1-1", 3, {opacity: 1, delay: delay})
-        .to("#c1-2", 3, {opacity: 1, delay: delay})
-        .to("#c1-3", 3, {opacity: 1, delay: delay})
+        .to("#content-1-fact-1", 1, {x: toPX('100vw'), delay: delay})
+        .to("#c1-1", 1, {opacity: 1})
+        .to("#c1-2", 1, {opacity: 1})
+        .to("#c1-3", 1, {opacity: 1})
         // animate to second panel
-        .to("#content-panel-1-container", 2,   {x: "-25%", delay: delay * 2})
+        .to("#content-panel-1-container", 1, {x: "-25%"})
         .to("#content-1-fact-2", 0, {display: "flex"})
-        .to("#content-1-fact-2", 2, {x: toPX('100vw'), delay: delay})
-        .to("#c2-1", 3, {opacity: 1, delay: delay})
-        .to("#c2-2", 3, {opacity: 1, delay: delay})
+        .to("#content-1-fact-2", 1, {x: toPX('100vw'), delay: delay})
+        .to("#c2-1", 1, {opacity: 1})
+        .to("#c2-2", 1, {opacity: 1})
         // animate to third panel
-        .to("#content-panel-1-container", 2,   {x: "-50%", delay: delay * 2})
+        .to("#content-panel-1-container", 1, {x: "-50%"})
         .to("#content-1-fact-3", 0, {display: "flex"})
-        .to("#content-1-fact-3", 2, {x: toPX('100vw'), delay: delay})
-        .to("#c3-1", 3, {opacity: 1, delay: delay})
-        .to("#c3-2", 3, {opacity: 1, delay: delay})
+        .to("#content-1-fact-3", 1, {x: toPX('100vw'), delay: delay})
+        .to("#c3-1", 1, {opacity: 1})
+        .to("#c3-2", 1, {opacity: 1})
         // animate to fourth panel
-        .to("#content-panel-1-container", 2,   {x: "-75%", delay: delay * 2})
-        .to("#content-1-fact-4", 10, {opacity: 1, delay: delay * 2})
+        .to("#content-panel-1-container", 1,   {x: "-75%"})
+        .to("#content-1-fact-4", 1, {opacity: 1});
+
+    let newsAnimations;
+
+    if ($(window).width() <= 700) {
+        newsAnimations = new TimelineMax()
+            .to("#solutions-panel", 0.5, {x: toPX("-100vw")})
+            .to("#costs-panel", 0.5, {x: toPX("-100vw")})
+            .to("#news-panel", 0.5, {x: toPX("-100vw")})
+    } else {
+        newsAnimations = new TimelineMax()
+            .to("#solutions-panel", 0.5, {y: toPX("-100vh")})
+            .to("#costs-panel", 0.5, {y: toPX("-100vh")})
+            .to("#news-panel", 0.5, {y: toPX("-100vh")})
+    }
+
+    new ScrollMagic.Scene({
+        triggerElement: "#content-panel-2"
+    })
+        .setTween(newsAnimations)
+        .addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: "#content-panel-1",
         triggerHook: "onLeave",
-        duration: "300%"
+        duration: "400%",
+        tweenChanges: true
     })
         .setPin("#content-panel-1")
         .setTween(wipeAnimation)
-        //.addIndicators() // add indicators (requires plugin)
+        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 }
 

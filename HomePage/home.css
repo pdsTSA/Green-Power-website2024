@@ -10,7 +10,7 @@ html, body {
     overflow-x: clip;
 }
 
-body h1,h2,h3,h4,h5,h6,p {
+body h1,h2,h3,h4,h5,h6,p,a {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
@@ -77,14 +77,25 @@ body h1,h2,h3,h4,h5,h6,p {
 }
 
 .final-panels {
+    display: flex;
     flex: 1;
     justify-content: center;
     align-content: center;
     height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+    top: 100vh;
+    width: 100%;
+}
+
+.final-panels a {
+    font-weight: bolder;
+    font-size: 3em;
 }
 
 #news-panel {
     background-image: url("assets/jungle.jpg");
+
 }
 
 #solutions-panel {
@@ -121,5 +132,14 @@ body h1,h2,h3,h4,h5,h6,p {
         min-width: 100%;
         left: 0;
         opacity: 0;
+    }
+
+    #content-panel-2-container {
+        flex-direction: column;
+    }
+
+    .final-panels {
+        top: 0;
+        left: 100vw;
     }
 }
