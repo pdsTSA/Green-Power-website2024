@@ -152,15 +152,15 @@ h3 {
 
 .information-article {
   display: flex;
-  width: 95%;
+  margin: 0 3em 0 3em;
   border: 1px solid rgb(0, 0, 0);
   align-items: center;
 }
 
 .information-article img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  min-width: 200px;
+  min-width: 100px;
   margin-right: 1rem;
 }
 
@@ -196,6 +196,7 @@ h3 {
   }
 
   .information-article img {
+    width: 100%;
     margin-right: 0px;
   }
 }
