@@ -33,7 +33,7 @@ video {
   --font-color: rgb(0, 0, 0);
   --font-family: "Roboto", sans-serif;
   --bold-font-weight: 550;
-  --h1-size: clamp(3rem, 2vw + 1rem, 5rem);
+  --h1-size: clamp(3rem, 3vw + 2rem, 7rem);
   --h2-size: 2rem;
   --h3-size: 1.5rem;
 }
@@ -54,6 +54,8 @@ h1 {
   font-size: var(--h1-size);
   font-weight: var(--bold-font-weight);
   text-align: center;
+  /* padding-left: 6rem; */
+  /* height: ; */
 }
 
 h2 {
@@ -64,6 +66,28 @@ h2 {
 h3 {
   font-size: var(--h3-size);
   font-weight: var(--bold-font-weight);
+}
+
+.temp {
+  height: 100vh;
+  width: 100%;
+  background-image: url("randomPic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.h1-container {
+  backdrop-filter: blur(6px);
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: 1.5s 1 slidein ease-in-out;
 }
 
 #overview {
@@ -118,7 +142,7 @@ h3 {
   width: 100%;
   height: auto;
   min-width: 100px;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 #information-container {
@@ -142,4 +166,62 @@ h3 {
 
 .information-article h2 {
   text-align: center;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-500px);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .h1-container {
+    width: 100%;
+  }
+
+  #overview {
+    flex-wrap: wrap-reverse;
+  }
+
+  #overview img {
+    width: 100%;
+  }
+
+  #card-container {
+    flex-wrap: wrap;
+  }
+
+  .information-article {
+    flex-wrap: wrap;
+  }
+
+  .information-article img {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .h1-container {
+    width: 50%;
+  }
+  #overview {
+    flex-wrap: nowrap;
+  }
+  #card-container {
+    flex-wrap: nowrap;
+  }
+
+  .information-article {
+    flex-wrap: nowrap;
+  }
+
+  .information-article img {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .h1-container {
+    width: 35%;
+  }
 }
