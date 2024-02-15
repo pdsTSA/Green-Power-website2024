@@ -90,10 +90,16 @@ h3 {
   animation: 1.5s 1 slidein ease-in-out;
 }
 
+#overview-section {
+  display: flex;
+  justify-content: center;
+}
+
 #overview {
   display: flex;
-  margin: 0 3em 0 3em;
+  margin: 0 1.5em 0 1.5em;
   border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(8, 160, 69, 0.5);
   align-items: center;
 }
 
@@ -101,10 +107,13 @@ h3 {
   text-align: center;
 }
 
-#overview img {
+#overview-figure {
   width: 50%;
+}
+
+#overview img {
+  width: 100%;
   height: auto;
-  min-width: 100px;
 }
 
 #overview .text-overview {
@@ -118,6 +127,7 @@ h3 {
 
 #card-container {
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
   width: 95%;
 }
@@ -128,7 +138,6 @@ h3 {
 }
 
 .card h3 {
-  color: rgb(31, 117, 27);
   text-align: center;
   padding: 0.1em 0 0.1em 0;
 }
@@ -140,9 +149,18 @@ h3 {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 350px;
   min-width: 100px;
   border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+}
+
+.card:nth-child(1) {
+  background-color: rgba(172, 210, 237, 0.4);
+}
+
+.card:nth-child(3) {
+  background-color: rgb(255, 231, 76);
 }
 
 #information-container {
@@ -151,8 +169,9 @@ h3 {
 }
 
 .information-article {
+  background-color: rgba(107, 191, 89, 0.7);
   display: flex;
-  margin: 0 3em 0 3em;
+  margin: 0 1.5em 0 1.5em;
   border: 1px solid rgb(0, 0, 0);
   align-items: center;
 }
@@ -180,11 +199,16 @@ h3 {
   }
 
   #overview {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
 
   #overview img {
     width: 100%;
+  }
+
+  #overview p {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 
   #card-container {
@@ -194,10 +218,16 @@ h3 {
   .information-article {
     flex-wrap: wrap;
   }
+  .information-article h2 {
+    padding: 0.2rem 0 0.2rem 0;
+  }
 
   .information-article img {
     width: 100%;
     margin-right: 0px;
+  }
+  .information-article p {
+    padding: 0 1rem 1rem 1rem;
   }
 }
 
