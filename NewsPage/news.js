@@ -3,6 +3,7 @@ $(document).ready(function(){
         const value = $(this).attr('data-filter')
         if (value == 'all') {
             $('.post-box').show('1000')
+            
         }
         else{
             $(".post-box")
@@ -17,8 +18,6 @@ $(document).ready(function(){
         $(this).addClass("active-filter").siblings().removeClass("active-filter");
     })
 });
-
-let header = document.querySelector('header')
 
 window.addEventListener('scroll', () => {
     header.classList.toggle('shadow', window.scrollY > 0);
