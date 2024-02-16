@@ -12,6 +12,10 @@ body{
     box-sizing: border-box;
 }
 
+.footer {
+    margin-top: 4rem;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -32,7 +36,7 @@ ul{
 .footer-col{
     width: 15%;
     justify-content: space-between;
-    padding: 2vh 75px;
+    padding: 2vh 60px;
 }
 .footer-col h4{
     font-size: 18px;
@@ -62,7 +66,7 @@ ul{
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
-    display: block;
+    display: inline-block;
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
@@ -80,6 +84,9 @@ ul{
     border-radius: 50%;
     color: #f7f7f7;
     transition: all 1s ease;
+}
+.social-links {
+    display: flex;
 }
 .footer-col .social-links a:hover{
     color: #24262b;
@@ -117,3 +124,15 @@ ul{
     text-align: center;
     color: white;
 }
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
