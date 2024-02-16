@@ -15,7 +15,11 @@ $(async () => {
 
     initAnimations(controller, slideController);
     await logoAnimation(controller);
-})
+});
+
+$(window).on('resize', () => {
+    location.reload();
+});
 
 const logoAnimation = async (controller) => {
     let tween;
@@ -53,7 +57,7 @@ const initAnimations = (controller, slideController) => {
     // content panel 1
     const delay = 1;
 
-    let wipeAnimation = new TimelineMax()
+    let wipeAnimation = new TimelineMax({easing: "easeInOut"})
         .to("#content-1-fact-1", 1, {x: toPX('100vw'), delay: delay})
         .to("#c1-1", 1, {opacity: 1})
         .to("#c1-2", 1, {opacity: 1})
@@ -98,11 +102,9 @@ const initAnimations = (controller, slideController) => {
         triggerElement: "#content-panel-1",
         triggerHook: "onLeave",
         duration: "400%",
-        tweenChanges: true
     })
         .setPin("#content-panel-1")
         .setTween(wipeAnimation)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 }
 
