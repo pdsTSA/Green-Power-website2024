@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="solutions.css">
+    <link rel="shortcut icon" type="x-icon" href="../NewsPage/images/iconicon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Green-Power Website</title>
+    <title>Grenergy</title>
 </head>
 <body>
 
@@ -17,9 +18,45 @@
     </script>
 
     <!--Code here-->
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Power Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="solution" id="solution1">
+      <h2>Solution 1</h2>
+      <p>Description of Solution 1</p>
+    </div>
+    <div class="solution" id="solution2">
+      <h2>Solution 2</h2>
+      <p>Description of Solution 2</p>
+    </div>
+    <div class="solution" id="solution3">
+      <h2>Solution 3</h2>
+      <p>Description of Solution 3</p>
+    </div>
+    <div class="solution" id="solution4">
+      <h2>Solution 4</h2>
+      <p>Description of Solution 4</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
 
     <footer>
-        <!--To Be Implemented-->
+        <div id="footerContainer"></div>
+    <script>
+        $(document).ready(function() {
+            $('#footerContainer').load('../Footer/footer.html');
+        });
+    </script>
     </footer>
 
     <script src="solutions.js"></script>
