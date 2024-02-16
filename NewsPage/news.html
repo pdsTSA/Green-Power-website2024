@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="x-icon" href="../NewsPage/images/iconicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Green-Power Website</title>
+    <title>Grenergy</title>
 </head>
 <body>
     
@@ -17,12 +22,153 @@
         });
     </script>
 
-    <!--Code here-->
-    
+
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Grenergy Digest</h2>
+            <span class="home-subtitle">Saving the planet doesn't have to be hard</span>
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter='all'>All</span>
+        <span class="filter-item active-filter" data-filter='Informational'>Informational</span>
+        <span class="filter-item active-filter" data-filter='tips'>Tips</span>
+    </div>
+
+    <section class="post container">
+        <!--Post Box 1-->
+        <div class="post-box tips">
+            <a href="post-page.html">
+            <img src="../NewsPage/images/recycle.png" alt="Image of 4 trash cans filled with different recycled material" class="profile img" class="post">
+            </a>
+            <h2 class="category">Tips</h2>
+            <a href="post-page.html" class="post-title">
+                You Recycle...Right?
+            </a>
+            <span class="post-date">feb 2024</span>
+            <p class="post-description"><i>Different materials require different protocol in methods to dispose...</i></p>
+        </div>
+
+        <!--Post Box 2-->
+        <div class="post-box tips">
+            <a href="post-page2.html">
+            <img src="../NewsPage/images/water.jpg" alt="Image of outstreched hand with a water drop falling on a sproutling" class="post">
+            </a>
+            <h2 class="category">Tips</h2>
+            <a href="post-page2.html" class="post-title">
+                Water Recycling: Don't Make Pour Choices
+            </a>
+            <span class="post-date">JAN 2024</span>
+            <p class="post-description"><i>Conserving water is not only important to the environment but also...</i></p>
+        </div>
+
+        <!--Post Box 3-->
+        <div class="post-box tips">
+            <a href = "post-page3.html">
+            <img src="../NewsPage/images/solar.jpg" alt="Solar panels on a roof with the Sun glinting off of it" class="post">
+            </a>
+            <h2 class="category">Tips</h2>
+            <a href="post-page3.html" class="post-title">
+                Implementing the Power of the Sun in Your Home
+            </a>
+            <span class="post-date">DEC 2023</span>
+            <p class="post-description"><i>Just as the Sun illuminating our Earth, we should try our...</i></p>
+        </div>
+
+        <!--Post Box 4-->
+        <div class="post-box Informational">
+            <a href = "post-page4.html">
+            <img src="../NewsPage/images/compost.jpg" alt="Hands carrying compost with food scraps in the backround" class="post">
+            </a>
+            <h2 class="category">Informational</h2>
+            <a href="post-page4.html" class="post-title">
+                How to Turn Your Food Scraps into Nutrient-Rich Soil
+            </a>
+            <span class="post-date">NOV 23</span>
+            <p class="post-description"><i>Compost truly exemplifies the epitome of the saying "One man's trash...</i></p>
+        </div>
+
+        <!--Post Box 5-->
+        <div class="post-box Geothermal">
+            <a href = "post-page5.html">
+                <img src="../NewsPage/images/geo11.jpg" alt="Diagram depicting a geothermal system implemented within a house" class="post">
+            </a>
+            <h2 class="category">Tips</h2>
+            <a href="post-page5.html" class="post-title">
+                Geothermal Heating and Cooling
+            </a>
+            <span class="post-date">OCT 23</span>
+            <p class="post-description"><i>Geothermal energy pumps are quieter, more energy efficient, low...</i></p>
+        </div>
+
+        <!--Post Box 6-->
+        <div class="post-box Informational">
+            <a href = "post-page6.html">
+                <img src="../NewsPage/images/green222.jpeg" alt="Cloudy bakcground with a facility with a long tower with lots of emissions being emitted" class="post">
+            </a>
+            <h2 class="category">Informational</h2>
+            <a href="post-page6.html" class="post-title">
+                Greenhouse Gases: Cut Emissions, Not Corners
+            </a>
+            <span class="post-date">SEPT 23</span>
+            <p class="post-description"><i>While the name might suggest a green source of energe, greenhouse...</i></p>
+        </div>
+        <!--Post Box 7-->
+        <div class="post-box tips">
+            <a href = "post-page7.html">
+                <img src="../NewsPage/images/cars.jpg" alt="Trafic jam filled with cars and buses slowly moving in either direction" class="post">
+            </a>
+            <h2 class="category">Tips</h2>
+            <a href="post-page7.html" class="post-title">
+                Driving Towards Sustainability
+            </a>
+            <span class="post-date">AUG 23</span>
+            <p class="post-description"><i>In 2019, transportation accounted for 33% of emissions in the United States...</i></p>
+
+        </div>
+
+        <!--Post Box 8-->
+        <div class="post-box Informational">
+            <a href = "post-page8.html">
+                <img src="../NewsPage/images/trash.jpg" alt="A sanitation worker sorts through a large pile of trash in an open facility" class="post">
+            </a>
+            <h2 class="category">Informational</h2>
+            <a href="post-page8.html" class="post-title">
+                Know Before You Throw
+            </a>
+            <span class="post-date">JUL 23</span>
+            <p class="post-description"><i>While not creating waste is the best way to reduce the amount of...</i></p>
+        </div>
+
+        <!--Post Box 9-->
+        <div class="post-box Informational">
+            <a href = "post-page9.html">
+                <img src="../NewsPage/images/justice.jpg" alt="Protesters hold signs with pro-green slogans. One poster reads how clean your air is should not be determined by your zip code with the hashtag we still can't breathe at the bottom" class="post">
+            </a>
+            <h2 class="category">Informational</h2>
+            <a href="post-page9.html" class="post-title">
+                Turning the Tide in Environmental Justice
+            </a>
+            <span class="post-date">JUN 23</span>
+            <p class="post-description"><i>While we all feel the affects of climate change, it's undeniable that marginalized...</i></p>
+        </div>
+    </section>
+
     <footer>
-        <!--To Be Implemented-->
+        <div id="footerContainer"></div>
+    <script>
+        $(document).ready(function() {
+            $('#footerContainer').load('../Footer/footer.html');
+        });
+    </script>
     </footer>
 
+
+
+    <!--JQuery link-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="news.js"></script>
 </body>
 </html>

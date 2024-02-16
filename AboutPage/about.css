@@ -1,0 +1,136 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  box-sizing: border-box;
+ 
+}
+
+
+
+h2, h3{
+  text-align: center;
+}
+h3{
+  font-size: 26px;
+}
+hr{
+  width: 82%;
+}
+
+
+.titletxt {
+color: black;
+padding-left: 7vw;
+padding-right: 7vw;
+margin-left: 4rem;
+margin-right: 4rem;
+}
+
+
+.titletxt:last-child {
+margin-bottom: 4rem;
+}
+
+.about {
+  color: #093607;
+  text-decoration: underline;
+}
+
+
+button{
+display: inline-block;
+text-decoration: none;
+width: 20%;
+padding: 5px;
+border: 1px solid black;
+border-radius: 4px;
+background-color: #093607;
+color: white;
+cursor: pointer;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+
+.center {
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+overflow-x: hidden;
+}
+.container {
+border: 1px solid rgb(0, 0, 0);
+border-radius: 1rem;
+}
+.text-container {
+  padding: 1em;
+}
+
+
+.image {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 15px;
+width: fit-content;
+height: 16vw;
+}
+.text{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.home {
+  width: 100%;
+  min-height: 440px;
+  background: #000000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  color: #c9deb2;
+  background: #093607;
+}
+
+.home-text{
+  color: #c9deb2;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3.5rem;
+}
+
+.buttonsection{
+  text-align: center;
+}
+.team-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+
+@media (max-width: 920) {
+.center {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+}
+
+
