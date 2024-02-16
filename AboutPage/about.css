@@ -77,7 +77,9 @@ button{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 350px;
+  object-fit:contain;
+  height: 100%;
+  width: 100%;
 }
 .text{
   width: 80%;
