@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,65 +8,124 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Grenergy</title>
 </head>
-
-<body>
+  <body>
     <header>
-        <div id="navbarContainer"></div>
-        <script>
-        $(document).ready(function() {
-            $('#navbarContainer').load('../Navbar/navbar.html');
+      <div id="navbarContainer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#navbarContainer").load("../Navbar/navbar.html");
         });
-        </script>
+      </script>
+
+      <div class="h1-container">
         <h1>Costs</h1>
+      </div>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h2>Costs of Different Types of Green Energy</h2>
-            </article>
+    <main id="main">
+      <section class="section" id="overview-section">
+        <article class="article" id="overview">
+          <figure class="figure overview-figure">
+            <img
+              loading="lazy"
+              src="solarpanel.webp"
+              alt=""
+            />
+          </figure>
+          <div class="text-overview">
+            <h2>Costs of Green Energy</h2>
+            <p>
+              Green power includes various types like wind and solar energy,
+              each with its own pros and cons, particularly regarding cost.
+              Different types of renewable energy have varying costs, tax
+              rebates, tax credits, and regulations. Tax rebates involve getting
+              money back, while tax credits can lower the amount of taxes people
+              pay.
+            </p>
+          </div>
+        </article>
+      </section>
+      <br />
+      <!-- The cards are for different types of Green Energy Ex: Solar, Wind, etc... -->
+      <section class="section" id="card-section">
+        <article class="article" id="card-container">
+          <div class="card">
+            <figure class="figure">
+              <img loading="lazy" src="Hydro-Power.png" alt="" />
+            </figure>
+            <div id="text-container">
+              <h3>Hydro</h3>
+              <p>
+                Hydroelectic power typically costs 0.85 cents per killowatt an
+                hour. The amount of kilowatts needed to power a home is 10
+                killowatts meaning that the average home only needs to pay $8.50
+                an hour. The amount of tax rebates you can get for hydroelectic
+                power is
+              </p>
+            </div>
+          </div>
 
-            <article>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
+          <div class="card">
+            <figure class="figure">
+              <img loading="lazy" src="wind-farm.jpg" alt="" />
+            </figure>
+            <div id="text-container">
+              <h3>Wind</h3>
+              <p>
+                Wind power costs below 2 cents per killowatt an hour and a house
+                using wind power is in the range from 5-15 killowatts an hour.
+                The amount of tax credits you can get for setting up a wind
+                turbine would be 30% because of the Production Tax Credit.
+              </p>
+            </div>
+          </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
-
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>[Title]</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius unde, doloribus, voluptatem, minus culpa eveniet velit corporis aliquam accusamus tempora? Labore, alias? Impedit veritatis sequi assumenda laudantium eligendi aliquam?</p>
-                </div>
-            </article>
-
-        </section>
-
-        <section>
-            <article>
-                <h2>Government Regulations</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere voluptatibus aspernatur reiciendis et! Autem facilis odio harum quibusdam! Veniam, consequuntur id? Maxime quo, culpa eligendi dolorum incidunt inventore pariatur?</p>
-                <img src="" alt="">
-            </article>
-
-            <article>
-                <h2>Tax Rebate Information</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium provident inventore in iure incidunt voluptates, facilis, placeat nam totam ducimus explicabo corporis tempore! Et nemo id explicabo sunt facere nostrum?</p>
-                <img src="" alt="">
-            </article>
-
-            <article>
-                <h2>What should you pick?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At excepturi dicta natus. Delectus blanditiis autem sint recusandae a illum laboriosam velit neque, exercitationem, quas nostrum nam vitae asperiores! Ipsum, optio.</p>
-                <img src="" alt="">
-            </article>
-        </section>
+          <div class="card">
+            <figure class="figure">
+              <img
+                loading="lazy"
+                src="sun-solar-energy-green-clean-renewable.jpg"
+                alt=""
+              />
+            </figure>
+            <div id="text-container">
+              <h3>Solar</h3>
+              <p>
+                Solar panels usually cost 6-8 cents per killowatt, and the
+                average home needs around 5-8.5 killowatts to power an average
+                home. The amount of tax credits you can get for setting up a
+                wind turbine would be 30% because of the Production Tax Credit.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <br />
+      <section class="section" id="information-container">
+        <article class="article information-article">
+          <figure class="figure information-figure">
+            <img
+              loading="lazy"
+              src="dam-safety-management-scaled.webp"
+              alt=""
+            />
+          </figure>
+          <div class="information-text">
+            <h2>What Should You Pick?</h2>
+            <p>
+              If you have a house and if the local regulations in your area
+              allow for you to have renewable energy, then you should definitely
+              get some type of green energy, but what is the best type for you
+              to have? There is only one where you could actually install and
+              that would be solar because the city usually builds hydroelectic
+              and wind power so solar is the only option for private citizens to
+              buy, but the best one to live in would probably be hydroelectic
+              power because it is the most consistent and gives you a lot of tax
+              credits to reduce taxes.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
@@ -79,5 +137,5 @@
     </script>
     </footer>
     <script src="costs.js"></script>
-</body>
+  </body>
 </html>
