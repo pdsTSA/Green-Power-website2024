@@ -1,64 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="solutions.css">
-    <link rel="shortcut icon" type="x-icon" href="../NewsPage/images/iconicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Power Solutions</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Grenergy</title>
-</head>
-<body>
+    <link rel="stylesheet" href="solutions.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbarContainer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#navbarContainer").load("../Navbar/navbar.html");
 
-    <div id="navbarContainer"></div>
-    <script>
-        $(document).ready(function() {
-            $('#navbarContainer').load('../Navbar/navbar.html');
         });
-    </script>
+      </script>
+    </header>
 
-    <!--Code here-->
-    
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Power Solutions</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="solution" id="solution1">
-      <h2>Solution 1</h2>
-      <p>Description of Solution 1</p>
+    <section class="home" id="home">
+      <div class="home-text container">
+          <h2 class="home-title">Solutions</h2>
+      </div>
+  </section>
+
+    <div class="container">
+      <section class="solution" id="solution1">
+        <div class="content" id="energystar">
+          <figure>
+            <img
+              src="Energy_Star_logo.svg.png"
+              alt=""
+              width="1200"
+              height="1229"
+              class="right"
+            />
+          </figure>
+          <div class="text-container">
+            <h2>Energy Star</h2>
+            <p>
+              Energy Star certified products help you in saving energy. With a
+              plethora of products to choose from, such as air conditioners,
+              refrigerators, washers, dryers, light bulbs, etc., you can start
+              saving energy and reducing emissions today! Energy Star offers
+              methods in which you can start saving at your own home and even
+              energy efficient homes and apartments which you are able to
+              purchase! Learn more about Energy Star today at
+              <a href="https://www.energystar.gov/" target="_blank"
+                >energystar.gov</a
+              >!
+            </p>
+            <a href="https://www.energystar.gov/" class="btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="solution" id="solution2">
+        <div class="content">
+          <div class="text-container">
+            <h2>Green Power Partnership</h2>
+            <p>
+              The EPA's Green Power Partnership promotes voluntary involvement
+              in the green power market by providing information, assistance,
+              and acknowledgment to companies employing green power. These
+              companies commit to using green power for a portion or all of
+              their yearly electricity consumption. Presently, partners' green
+              power usage represents close to 37% of the U.S. voluntary green
+              power market (excluding hydropower). Since its establishment in
+              2001, the program has aided in preventing almost 280 million
+              metric tons of greenhouse gas emissions. Learn more at
+              <a href="https://www.epa.gov/greenpower" target="_blank"
+                >epa.gov/greenpower</a
+              >.
+            </p>
+            <a href="https://www.epa.gov/greenpower" class="btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <figure>
+            <img
+              src="Seal_of_the_United_States_Environmental_Protection_Agency.svg.png"
+              alt=""
+              width="1200"
+              height="1200"
+              class="left"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="solution" id="solution3">
+        <div class="content">
+          <figure>
+            <img
+              src="230221-east-palestine-epa-river-mjf-1106-ce73d9.webp"
+              alt=""
+              width="1200"
+              height="630"
+              class="right"
+            />
+          </figure>
+          <div class="text-container">
+            <h2>SmartWay Transport Partnership</h2>
+            <p>
+              SmartWay collaborates with thousands of freight industry
+              participants to promote advanced fuel-saving practices. It's
+              widely embraced by leading companies across various sectors,
+              resulting in substantial greenhouse gas emission reductions and
+              cost savings totaling over $52 billion since 2004. Learn more at
+              <a href="https://www.epa.gov/smartway" target="_blank"
+                >epa.gov/smartway</a
+              >.
+            </p>
+            <a href="https://www.epa.gov/smartway" class="btn" target="_blank"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="solution" id="solution4">
+        <div class="content">
+          <div class="text-container">
+            <h2>
+              Pennsylvania's Methane Emissions Reduction Partnership Programs
+            </h2>
+            <p>
+              Pennsylvania's Methane Emissions Reduction Partnership Programs
+              encourage the efficient recovery and utilization of methane from
+              vital sectors like agriculture, coal mining, municipal solid
+              waste, and the oil and gas industry. Through initiatives such as
+              AgSTAR, Coalbed Methane Outreach Program, Landfill Methane
+              Outreach Program, Natural Gas STAR, and Methane Challenge, these
+              programs have collectively averted nearly 1.6 billion metric tons
+              of greenhouse gas emissions and resulted in approximately $10
+              billion in cost savings. Learn more at
+              <a
+                href="https://www.epa.gov/energy/clean-energy-programs"
+                target="_blank"
+                >epa.gov/energy/clean-energy-programs</a
+              >,
+              <a
+                href="https://www.epa.gov/natural-gas-star-program"
+                target="_blank"
+                >epa.gov/natural-gas-star-program</a
+              >, and
+              <a href="https://www.epa.gov/cmop" target="_blank">epa.gov/cmop</a
+              >.
+            </p>
+            <a
+              href="https://www.epa.gov/energy/clean-energy-programs"
+              class="btn"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <figure>
+            <img
+              src="nd-bb-epa-012019-WEB.jpg"
+              alt=""
+              width="900"
+              height="550"
+              class="left"
+            />
+          </figure>
+        </div>
+      </section>
     </div>
-    <div class="solution" id="solution2">
-      <h2>Solution 2</h2>
-      <p>Description of Solution 2</p>
-    </div>
-    <div class="solution" id="solution3">
-      <h2>Solution 3</h2>
-      <p>Description of Solution 3</p>
-    </div>
-    <div class="solution" id="solution4">
-      <h2>Solution 4</h2>
-      <p>Description of Solution 4</p>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
 
     <footer>
-        <div id="footerContainer"></div>
-    <script>
-        $(document).ready(function() {
-            $('#footerContainer').load('../Footer/footer.html');
+      <div id="footerContainer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#footerContainer").load("../Footer/footer.html");
         });
-    </script>
+      </script>
     </footer>
-
-    <script src="solutions.js"></script>
-</body>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
