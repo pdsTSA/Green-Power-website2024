@@ -2,6 +2,18 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+::selection {
+  color: #c9deb2;
+  background: #093607;
+}
+.home {
+  width: 100%;
+  min-height: 440px;
+  background: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
 img,
 picture,
@@ -9,6 +21,14 @@ svg,
 video {
   display: block;
   max-width: 100%;
+}
+.home-text {
+  color: #c9deb2;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3.5rem;
 }
 .container {
   width: 100%;
