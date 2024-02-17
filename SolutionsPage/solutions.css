@@ -16,7 +16,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  /* color: #fff; */
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,7 @@ body {
 
 .content {
   text-align: center;
+  border: 1px solid #000 ;
   /* opacity: 0; */
   transition: opacity 0.5s ease;
 }
