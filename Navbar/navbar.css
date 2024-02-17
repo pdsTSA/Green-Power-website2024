@@ -88,6 +88,7 @@ ul a:hover {
         width: 100%;
         height: calc(110vh - 52px);
         transition: 0.5s;
+        z-index: 999999;
     }
     input[type="checkbox"]:checked ~ ul {
         left: 0;

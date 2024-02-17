@@ -17,8 +17,15 @@ $(async () => {
     await logoAnimation(controller);
 });
 
+var lastWidth = $(window).width();
+var lastHeight = $(window).height();
+
 $(window).on('resize', () => {
-    location.reload();
+    if ($(window).width() !== lastWidth || Math.abs($(window).height() - lastHeight) > 200) {
+        location.reload();
+    }
+    lastWidth = $(window).width();
+    lastHeight = $(window).height();
 });
 
 const logoAnimation = async (controller) => {
